@@ -35,5 +35,5 @@ if st.button("Predict"):
     user_df = pd.DataFrame([input_data])
     prediction = model.predict(user_df)[0]
     st.subheader("Prediction Result:")
-    st.write("✅ Infected" if prediction == 1 else "❌ Not Infected")
+    st.write("✅ Congratulations,You are Infected" if prediction == 1 else "❌ OOPS! Virus not got you (Not Infected)")
 
